@@ -1,5 +1,4 @@
 import { foods, juices } from './data.js';
-
 let ordersArray = [];
 
 //chosed will stock the categorie chosed
@@ -149,10 +148,12 @@ document.querySelector(".submit").addEventListener("click", function(e) {
     //showing the validation message 
     renderMessg(formData);
     document.querySelector(".last-form").classList.add("hide-me");
+   
+   
 })
 
 function getFormData(form) {
-    data = new FormData(form);
+    let data = new FormData(form);
     return {
         name: data.get("name"),
         cardNum: data.get("card-num"),
@@ -168,9 +169,21 @@ function renderMessg(formData) {
     msg.innerHTML = `
      <p> Thanks, ${formData.name}! Your order is on its way!</p>
      `;
+    //adding the animation to msg
     setTimeout(() => {
         msg.classList.add("pop");
     }, 300);
+    //hidding msg after a certain time
+    setTimeout(() => {
+        msg.classList.add("hidden");
+    }, 2300);
+    //showing the home page again after a certain time
+    setTimeout(() => {
+        msg.classList.add("hidden");
+        ordersArray = [];
+        renderChosedRadio();
+        showDivs();
+    }, 5000);
 
 }
 
