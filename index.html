@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+    <title>Restaurant App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+</head>
+
+<body>
+    <header>
+        <h1 class="heading">Tabour’s Diner</h1>
+        <h2 class="subheading">The best burgers and pizzas in town.</h2>
+    </header>
+
+    <main>
+        <form class="select">
+            <input type="radio" name="categorie" id="foods" checked>
+            <label for="foods">Food</label>
+            <input type="radio" name="categorie" id="juices">
+            <label for="juices">Juices</label>
+        </form>
+        <section class="rendering-section"></section>
+    </main>
+    <footer>
+        <button class="up">
+            <i class="fa-solid fa-caret-up fa-bounce"></i>
+            <i class="fa-solid fa-caret-down fa-beat-fade hide-me"></i>
+        </button>
+        <section class="show-or-hide hide-me">
+            <h3>Your order</h3>
+            <section class="orders-section">
+
+            </section>
+            <section class="fixed">
+                <div class="orders total-price-div">
+                    <p>Total price:</p>
+                    <p class="total-price price">$0</p>
+                </div>
+                <button class="complete-order">Complete order</button>
+            </section>
+        </section>
+    </footer>
+    <form action="" class="last-form hide-me">
+        <h3>Enter card details</h3>
+        <input type="text" name="name" id="name" placeholder="Enter your name">
+        <input type="text" name="card-num" id="card-num" placeholder="Enter card number">
+        <input type="password" name="cvv" id="cvv" placeholder="Enter CVV">
+        <button class="submit" type="submit"> Pay</button>
+    </form>
+    <!-- <div class="hide-me thanks">
+
+    </div> -->
+    <script src="script.js" type="module"></script>
+    <script src="data.js" type="module"></script>
+</body>

@@ -1,0 +1,392 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    background-color: white;
+    background: url('images/wave-haikei.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+}
+
+
+/* Layout */
+
+header,
+main,
+footer {
+    max-width: 900px;
+    min-width: 600px;
+    margin: 0 auto;
+}
+
+header {
+    background: url('images/burgCover.png') lightgray;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 1.25em 2.875em;
+    min-height: 220px;
+}
+
+main {
+    background-color: white;
+    padding: 1em 2.875em;
+    padding-bottom: 11.5em;
+}
+
+.select {
+    display: block;
+    margin: 0 0 auto auto;
+    margin-bottom: 1em;
+    width: 100%;
+    padding: 0.25em 0;
+    text-align: left;
+    font-size: 30px;
+    font-weight: 600;
+    border: 2px solid;
+    border-radius: 11px;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+@media(max-width:400px) {
+    .last-form {
+        margin: auto;
+        padding: 1.8em;
+    }
+    .last-form input {
+        padding: 1.2em;
+        font-size: 1.5rem;
+        margin-bottom: 1.2em;
+    }
+    .last-form button {
+        font-size: 1.4rem;
+        padding: 1.2em;
+        margin-top: 1em;
+    }
+    /* typography */
+    .last-form h3 {
+        font-size: 2rem;
+        margin-bottom: 1.5em;
+    }
+}
+
+.padd-bot {
+    padding-bottom: 41.75em;
+}
+
+footer {
+    border-top: 1.5px solid rgba(210, 210, 210, 1);
+    text-align: center;
+    background-color: white;
+    padding: 1.4em 2.875em;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto auto 0 auto;
+}
+
+.items {
+    padding-bottom: 1em;
+    margin-bottom: 2.5em;
+    border-bottom: 1px solid rgba(210, 210, 210, 1);
+    display: flex;
+    align-items: center;
+    gap: 1.875em;
+}
+
+.item-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 2em;
+}
+
+.add {
+    padding: 1em 1.3em;
+    border-radius: 50%;
+    border: 1px solid rgba(222, 222, 222, 1);
+    background-color: white;
+    font-size: 1.0rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.last-form {
+    max-width: 900px;
+    width: 90%;
+    height: max-content;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 5em auto auto auto;
+    display: flex;
+    flex-direction: column;
+    padding: 1.8em;
+    background-color: white;
+    border: 1.297px solid #757575;
+    border-radius: 3.89px;
+}
+
+.last-form input {
+    padding: 0.5em;
+    font-size: 1rem;
+    border-radius: 3.89px;
+    border: 1.297px solid #757575;
+    background-color: white;
+    margin-bottom: 0.8em;
+}
+
+.last-form button {
+    font-size: 1rem;
+    padding: 0.8em;
+    margin-top: 0.5em;
+}
+
+
+/* typography */
+
+.last-form h3 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 1em;
+    margin-top: 0;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-size: 2.7rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 0.5em;
+}
+
+.subheading {
+    font-size: 1.5rem;
+    font-size: 1.7rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.lite {
+    font-size: 0.75rem;
+    font-size: 0.95rem;
+    margin-left: 1em;
+    font-weight: 400;
+    color: rgba(187, 187, 187, 1);
+}
+
+.details-section h3,
+.details-section p {
+    margin: 0;
+    margin-bottom: 0.2em;
+}
+
+footer h3 {
+    font-size: 1.5rem;
+    font-size: 1.9rem;
+    text-align: center;
+    margin-top: 0.5em;
+}
+
+.orders p {
+    font-size: 1.2rem;
+    font-size: 1.5rem;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.orders span {
+    font-size: 0.85rem;
+    font-size: 0.9em;
+}
+
+.details-section p {
+    font-size: 1.005rem;
+    font-size: 1.5rem;
+    margin-bottom: 1.2em;
+}
+
+.details-section h3 {
+    font-size: 1.5rem;
+    font-size: 1.9rem;
+}
+
+.orders-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+
+/* orders */
+
+.orders {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: space-between;
+    border: 2px solid;
+    padding: 16px;
+    border-radius: 20px;
+    gap: 5px;
+}
+
+.total-price-div {
+    margin-top: 1.875em;
+    padding-top: 0.6em;
+    margin-bottom: 1em;
+    border-top: 2px solid;
+    border: none;
+}
+
+.complete-order,
+.last-form button {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 3px;
+    background: #16DB99;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+    color: white;
+    border: none;
+    box-sizing: border-box;
+    width: 100%;
+    font-weight: 600;
+}
+
+.complete-order {
+    font-size: 20px;
+    padding: 1.325em;
+}
+
+
+/* additional styling */
+
+button {
+    box-sizing: border-box;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.img-section {
+    width: 45%;
+    display: flex;
+    max-width: 144px;
+}
+
+.img-section img {
+    width: 100%;
+    display: inline-block;
+    margin: auto;
+}
+
+.orders:hover {
+    cursor: pointer;
+}
+
+.orders-section .price,
+.total-price {
+    color: #16DB99;
+}
+
+.orders-section .price {
+    /* color: #16db9985; */
+    color: #16DB99;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.repeated {
+    border: 1px solid;
+    border-radius: 50%;
+    padding: 2px 9px;
+}
+
+.ingredients {
+    text-transform: capitalize;
+}
+
+.up {
+    background-color: white;
+    border: none;
+    padding: 10px 30px;
+}
+
+.up i {
+    font-size: 45px;
+}
+
+.hide-me {
+    display: none;
+}
+
+button .hide-me {
+    display: none;
+}
+
+.msg {
+    text-align: center;
+    line-height: 1.5;
+    color: #065F46;
+    font-size: 1.3rem;
+    padding: 1em;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    height: fit-content;
+    width: 80%;
+    max-width: 1000px;
+    border-radius: 3px;
+    background: #ECFDF5;
+}
+
+
+/* @media(min-width:900px) {
+    header {
+        min-height: 300px;
+    }
+} */
+
+.hidden {
+    /* opacity: 0.1; */
+    visibility: hidden;
+}
+
+.notpop {
+    transform: scale(0.1);
+    opacity: 0.5;
+}
+
+.pop {
+    transform: scale(1);
+    opacity: 1;
+    transition: all 3s ease;
+}
+
+input[type='radio'] {
+    accent-color: #82521f;
+}
